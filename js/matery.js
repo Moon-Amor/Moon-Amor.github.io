@@ -237,4 +237,3 @@ function switchSpringThemes() {
 };
 // 网站主题切换模式结束
  
-console.log("恭喜你喜提彩蛋！欢迎常来本博客逛逛~");
