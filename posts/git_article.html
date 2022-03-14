@@ -1018,62 +1018,91 @@ h3:hover {
 <li>配置用户名命令：<code>git config —global user.name “xxx”</code></li>
 <li>配置邮箱命令：<code>git config —global user.email “xxx@”</code><pre><code>git config --global user.name &quot;xxx&quot;
 git config --global user.email &quot;xxx@&quot;
-</code></pre><h3 id="Git常用到的方法"><a href="#Git常用到的方法" class="headerlink" title="Git常用到的方法"></a>Git常用到的方法</h3><h4 id="1、创建分支命令-两种-："><a href="#1、创建分支命令-两种-：" class="headerlink" title="1、创建分支命令(两种)："></a>1、创建分支命令(两种)：</h4><ol>
+</code></pre></li>
+</ul>
+<h3 id="Git常用到的方法"><a href="#Git常用到的方法" class="headerlink" title="Git常用到的方法"></a>Git常用到的方法</h3><h4 id="1-创建分支命令"><a href="#1-创建分支命令" class="headerlink" title="1.创建分支命令"></a>1.创建分支命令</h4><ul>
 <li>创建分支<code>git branch 分支名称</code></li>
-<li>创建分支并切换到该分支<code>git checkout -b 分支名称</code>或<code>git switch -c 分支名称</code><pre><code>git branch 分支名称 // 创建分支
+<li>创建分支并切换到该分支<code>git checkout -b 分支名称</code>或<code>git switch -c 分支名称</code></li>
+</ul>
+<pre><code>git branch 分支名称 // 创建分支
 git checkout 分支名称 或 git switch 分支名称// 切换到分支
 &lt;!-- =============== --&gt;
 git checkout -b 分支名称 或 git switch -c 分支名称// 创建分支并切换到该分支
-</code></pre><h4 id="2、查看分支"><a href="#2、查看分支" class="headerlink" title="2、查看分支"></a>2、查看分支</h4></li>
-</ol>
-</li>
+</code></pre><h4 id="2-查看分支"><a href="#2-查看分支" class="headerlink" title="2.查看分支"></a>2.查看分支</h4><ul>
 <li>查看本地分支命令：<code>git branch</code></li>
 <li>查看远端分支命令：<code>git branch -r</code></li>
-<li>查看本地&amp;远端分支：<code>git branch -a</code><pre><code>git branch // 查看本地分支
+<li>查看本地&amp;远端分支：<code>git branch -a</code></li>
+</ul>
+<pre><code>git branch // 查看本地分支
 git branch -r // 查看远端分支
 git branch -a // 查看本地&amp;远端分支
-</code></pre><h4 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3.合并分支"></a>3.合并分支</h4>当我们做好改动后，需要切换到主分支master，然后合并</li>
-<li>合并分支命令：<code>git merge 分支名称</code><h4 id="4-解决合并分支时的冲突"><a href="#4-解决合并分支时的冲突" class="headerlink" title="4.解决合并分支时的冲突"></a>4.解决合并分支时的冲突</h4>我们在合并分支的时候难免会遇到，与同事修改同一处地方，这时候就会有冲突，我们需要手动修改<br><img src="https://img.tvv.tw/2022/03/13/bc2d3918a261e.png" alt="冲突"><h4 id="5-删除分支"><a href="#5-删除分支" class="headerlink" title="5.删除分支"></a>5.删除分支</h4></li>
-<li>删除分支命令：<code>git branch -D </code>分支名称<h4 id="6-提交到远端"><a href="#6-提交到远端" class="headerlink" title="6.提交到远端"></a>6.提交到远端</h4></li>
+</code></pre><h4 id="3-合并分支"><a href="#3-合并分支" class="headerlink" title="3.合并分支"></a>3.合并分支</h4><p>当我们做好改动后，需要切换到主分支master，然后合并</p>
+<ul>
+<li>合并分支命令：<code>git merge 分支名称</code></li>
+</ul>
+<h4 id="4-解决合并分支时的冲突"><a href="#4-解决合并分支时的冲突" class="headerlink" title="4.解决合并分支时的冲突"></a>4.解决合并分支时的冲突</h4><p>我们在合并分支的时候难免会遇到，与同事修改同一处地方，这时候就会有冲突，我们需要手动修改。<br><img src="https://img.tvv.tw/2022/03/13/bc2d3918a261e.png" alt="冲突"></p>
+<h4 id="5-删除分支"><a href="#5-删除分支" class="headerlink" title="5.删除分支"></a>5.删除分支</h4><ul>
+<li>删除分支命令：<code>git branch -D </code>分支名称</li>
+</ul>
+<h4 id="6-提交到远端"><a href="#6-提交到远端" class="headerlink" title="6.提交到远端"></a>6.提交到远端</h4><ul>
 <li>提交到暂存区命令：<ol>
 <li>提交所有文件到暂存区命令：<code>git add .</code></li>
-<li>提交某个文件到暂存区命令：<code>git add 文件名称</code><pre><code>git add . //提交所有文件到暂存区
-git add 文件名称 //提交某个文件到暂存区
-</code></pre></li>
+<li>提交某个文件到暂存区命令：<code>git add 文件名称</code></li>
 </ol>
 </li>
-<li>提交到本地仓库命令：<code>git commit -m “提交信息描述”</code><pre><code>git commit -m &quot;提交信息描述&quot;
-</code></pre></li>
+</ul>
+<pre><code>git add . //提交所有文件到暂存区
+git add 文件名称 //提交某个文件到暂存区
+</code></pre><ul>
+<li>提交到本地仓库命令：<code>git commit -m “提交信息描述”</code></li>
+</ul>
+<pre><code>git commit -m &quot;提交信息描述&quot;
+</code></pre><ul>
 <li>推送本地分支提交到远端命令：<code>git push origin -u 分支名称</code></li>
-<li>第一次提交加-u 此后 <code>git push origin 分支名称</code><pre><code>git push origin -u 分支名称 //第一次提交
+<li>第一次提交加-u 此后 <code>git push origin 分支名称</code></li>
+</ul>
+<pre><code>git push origin -u 分支名称 //第一次提交
 git push origin 分支名称 // 此后
-</code></pre></li>
-<li>提交时候可能会遇到的问题<pre><code>error: failed to push some refs to &#39;git@github.com:michaelliao/learngit.git&#39;
+</code></pre><ul>
+<li>提交时候可能会遇到的问题</li>
+</ul>
+<pre><code>error: failed to push some refs to &#39;git@github.com:michaelliao/learngit.git&#39;
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: &#39;git pull ...&#39;) before pushing again.
 hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
-</code></pre>需要先<code>git pull</code>把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送：<pre><code>git pull
+</code></pre><p>需要先<code>git pull</code>把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送：</p>
+<pre><code>git pull
 // 可能会遇到的问题：
 There is no tracking information for the current branch. 
 Please specify which branch you want to merge with. 
 // git pull也失败了，原因是没有指定本地dev分支与远程origin/dev分支的链接，根据提示，设置dev和origin/dev的链接：
 $ git branch --set-upstream-to=origin/dev dev
 再 git pull
-</code></pre><h4 id="7-拉取远端分支到本地"><a href="#7-拉取远端分支到本地" class="headerlink" title="7.拉取远端分支到本地"></a>7.拉取远端分支到本地</h4></li>
+</code></pre><h4 id="7-拉取远端分支到本地"><a href="#7-拉取远端分支到本地" class="headerlink" title="7.拉取远端分支到本地"></a>7.拉取远端分支到本地</h4><ul>
 <li>第一次：<code>git checkout -b 本地分支 origin/远程分支</code></li>
 <li>此后：<code>git checkout 远程分支</code></li>
 </ul>
 <h4 id="8-贮藏"><a href="#8-贮藏" class="headerlink" title="8.贮藏"></a>8.贮藏</h4><p>有时候我们再写代码的时候，领导会要我们修改个bug，我们代码又没有写完，不可提交。这时候就可以用贮藏来保存代码。改完bug再回来写我们的项目。</p>
 <ul>
-<li>建贮藏命令：<code>git stash save ‘描述’</code><pre><code>git stash save &#39;描述&#39;
-</code></pre></li>
-<li>查看贮藏命令：<code>git stash list</code><pre><code>git stash list
-</code></pre></li>
-<li>使用贮藏命令：<code>git stash apply stash@&#123;索引&#125;</code><pre><code>git stash apply stash@&amp;#123;索引&amp;#125;
-</code></pre></li>
-<li>删除贮藏命令：<code>git stash drop stash@&#123;索引&#125;</code><pre><code>git stash drop stash@&amp;#123;索引&amp;#125;
-</code></pre><h4 id="9-查看状态"><a href="#9-查看状态" class="headerlink" title="9.查看状态"></a>9.查看状态</h4></li>
+<li>建贮藏命令：<code>git stash save ‘描述’</code></li>
+</ul>
+<pre><code>git stash save &#39;描述&#39;
+</code></pre><ul>
+<li>查看贮藏命令：<code>git stash list</code></li>
+</ul>
+<pre><code>git stash list
+</code></pre><ul>
+<li>使用贮藏命令：<code>git stash apply stash@&#123;索引&#125;</code></li>
+</ul>
+<pre class=" language-lang-html"><code class="language-lang-html">git stash apply stash@&#123;索引&#125;
+</code></pre>
+<ul>
+<li>删除贮藏命令：<code>git stash drop stash@&#123;索引&#125;</code></li>
+</ul>
+<pre class=" language-lang-html"><code class="language-lang-html">git stash drop stash@&#123;索引&#125;
+</code></pre>
+<h4 id="9-查看状态"><a href="#9-查看状态" class="headerlink" title="9.查看状态"></a>9.查看状态</h4><ul>
 <li>查看当前工作状态命令：<code>git status</code> 看看那些需要更新</li>
 <li>查看commit日志命令：<code>git log</code></li>
 </ul>
@@ -1081,9 +1110,7 @@ $ git branch --set-upstream-to=origin/dev dev
 <li>丢弃某个文件：<code>git checkout — 文件名称</code></li>
 <li>丢弃所有文件：<code>git checkout .</code></li>
 </ul>
-<h3 id="更详细的可阅读廖雪峰网站"><a href="#更详细的可阅读廖雪峰网站" class="headerlink" title="更详细的可阅读廖雪峰网站"></a>更详细的可阅读廖雪峰网站</h3><ul>
-<li><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="LinkCard" target="_blank">廖雪峰网站地址</a></li>
-</ul>
+<h3 id="更详细的可阅读廖雪峰网站"><a href="#更详细的可阅读廖雪峰网站" class="headerlink" title="更详细的可阅读廖雪峰网站"></a>更详细的可阅读廖雪峰网站</h3><p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="LinkCard" target="_blank">廖雪峰网站地址</a></p>
 
             </div>
             <hr/>
