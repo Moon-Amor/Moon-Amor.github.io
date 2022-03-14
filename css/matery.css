@@ -1019,7 +1019,7 @@ article .article-tags .chip {
     line-height: inherit;
     position: absolute;
     box-sizing: border-box;
-    z-index: 200;
+    z-index: 1;
     background-color: #fff;
     font-weight: 500;
 }
@@ -1079,7 +1079,7 @@ body.dark .profile .author .title {
     content: ""!important;
 }
 .fa-user-circle:before {
-    content: ""!important;
+    content: "\f2bd" !important;
 }
 .publish-date {
     color: #222;
