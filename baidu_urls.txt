@@ -1,4 +1,4 @@
-https://moon-amor.github.io/posts/git_article.html
+https://moon-amor.github.io/posts/gitarticle.html
 https://moon-amor.github.io/posts/itsneko-opensource-blog.html
 https://moon-amor.github.io/posts/articletemplate.html
 https://moon-amor.github.io/posts/essay-demo.html
