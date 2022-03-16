@@ -969,6 +969,7 @@ article .card .card-content {
 }
 
 article .article-content .summary {
+    height: 59px;
     padding-bottom: 2px;
     padding-left: 0;
     margin-bottom: 6px;
