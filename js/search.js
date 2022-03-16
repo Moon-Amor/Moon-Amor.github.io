@@ -2,7 +2,7 @@ var searchFunc = function (path, search_id, content_id) {
     'use strict';
     $.ajax({
         url: path,
-        dataType: "xmd",
+        dataType: "xml",
         success: function (xmlResponse) {
             // get the contents from search data
             var datas = $("entry", xmlResponse).map(function () {
