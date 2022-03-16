@@ -2,16 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://moon-amor.github.io/posts/dfdfdf.html</loc>
+    <loc>https://moon-amor.github.io/posts/git_article.html</loc>
     
     <lastmod>2022-03-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://moon-amor.github.io/posts/gitarticle.html</loc>
-    
-    <lastmod>2022-03-14</lastmod>
     
   </url>
   
@@ -51,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/vote/index.html</loc>
+    <loc>https://moon-amor.github.io/ticktack/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/ticktack/index.html</loc>
+    <loc>https://moon-amor.github.io/vote/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -93,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/musics/index.html</loc>
+    <loc>https://moon-amor.github.io/qingdan/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/qingdan/index.html</loc>
+    <loc>https://moon-amor.github.io/musics/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -114,14 +107,14 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/essay/index.html</loc>
+    <loc>https://moon-amor.github.io/friends/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/friends/index.html</loc>
+    <loc>https://moon-amor.github.io/essay/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -135,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/donate/index.html</loc>
-    
-    <lastmod>2022-02-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://moon-amor.github.io/count/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
@@ -149,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/collection/index.html</loc>
+    <loc>https://moon-amor.github.io/donate/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -163,6 +149,13 @@
   </url>
   
   <url>
+    <loc>https://moon-amor.github.io/collection/index.html</loc>
+    
+    <lastmod>2022-02-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://moon-amor.github.io/posts/essay-demo.html</loc>
     
     <lastmod>2022-02-27</lastmod>
@@ -170,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/about/index.html</loc>
+    <loc>https://moon-amor.github.io/books/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/books/index.html</loc>
+    <loc>https://moon-amor.github.io/about/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
