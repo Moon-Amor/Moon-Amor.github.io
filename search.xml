@@ -261,7 +261,7 @@ $ git branch --set-upstream-to=origin/dev dev
       </tags>
   </entry>
   <entry>
-    <title>这是随笔文章模板</title>
+    <title>react+ts等最详细配置</title>
     <url>/posts/react_cli_ts.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note info">【React+TS】从零开始搭建react+typescript+router+redux+less+px2rem自适应+sass+axios反向代理+别名@+Antd-mobile</div>
 
