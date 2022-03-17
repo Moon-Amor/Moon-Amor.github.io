@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vlog, 学习,前端,博客">
+    <meta name="keywords" content="这是随笔文章模板, 学习,前端,博客">
     <meta name="description" content="一个用来记录学习和生活的网站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vlog | 多喝热水`Blog</title>
+    <title>这是随笔文章模板 | 多喝热水`Blog</title>
     
     <script>
         // 隐藏
@@ -654,288 +654,992 @@
     </nav>
 </header>
 <!-- header模块结束 -->
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-        <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    vlog
-                 
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: ['彼方尚有荣光在,何须悲叹少年轻',''],
-                        startDelay: 200,
-                        typeSpeed: 120,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/toc-banner/1.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">这是随笔文章模板</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
 
 
-    </div>
-    <div class="mohuxiaoguo"></div>
-</div>
-
-
+<main class="post-container content">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/tocbot/tocbot.css">
 <style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+    .suibis[data-spmid="随笔"] {
+        width: 100%!important;
+    }
+    .toc-widget[data-spmid="随笔"],
+    #floating-toc-btn[data-spmid="随笔"]
+    {
+        display: none!important;
+    }
+     
+</style>
+
+<div class="row">
+    
+    
+        <div id="main-content" class="col s12 m12 l9 suibis" data-spmid="技术">
+            <style>
+    #switchspring {
+        bottom: 223px!important;
+    }
     @media only screen and (max-width: 601px) {
         #switchspring {
             bottom: 178px!important;
         }
     }
-    #switchspring {
-        bottom: 243px;
+    #switchchristmas {
+        bottom: 281px!important;
     }
-    .container .row {
-        margin-top: 69px;
+    @media only screen and (max-width: 601px) {
+        #switchchristmas {
+            bottom: 235px!important;
+        }
     }
-    .bg-cover::before {
-        background-image: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png);
-    }
-    .musis > div {
-        margin-bottom: 60px;
-    }
-    .aplayer {
-        border-radius: 8px!important;
-    }
-    .comment-scroll {
-        bottom: 93px;
-    }
-    .v[data-class=v] .vcards {
-        display: none;
-    }
-    .musis div p {
+    .ititle {
+        margin: 15px 0;
+        text-align:center;
         font-family: 'Architects Daughter', cursive;
-        font-size: 18px;
     }
-    .musictitle {
-        font-family: 'Architects Daughter', cursive;
-        font-size: 20px;
-        margin-bottom: 0px!important;
-        padding-top: 24px;
-    }
-    body.dark .musictitle, body.dark .tipsbili {
-        color: rgba(255, 255, 255, 0.6);
-    }
-    .tipsbili, .tipsbili code {
-        font-size: 0.2rem;
-        padding: 4px 10px;
-    }
-    
-    /* 修改小屏幕下logo文字样式. */
-    @media only screen and (max-width: 600px) {
-        .about-cover {
-            height: 64vh;
-        }   
-        .container .row {
-            margin-top: 50px;
-        }
-        .biye {
-            padding: 0 8px 8px 8px!important;
-            width: 96%;
-            height: 96%;
-        }
-        .musis > div {
-            margin-bottom: 45px;
-        }
-        
-    }
-    .biye {
-        padding: 0 24px 24px 24px;
-        width: 80%;
-        height: 80%;
+    .ipage {
+        line-height: 30px;
         margin: 0 auto;
+        padding: 15px 32px 29px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+        -moz-border-radius-bottomleft: 20px 500px;
+        -moz-border-radius-bottomright: 500px 30px;
+        -moz-border-radius-topright: 5px 100px;	
+        -webkit-border-bottom-left-radius: 20px 500px;
+        -webkit-border-bottom-right-radius: 64px 10px;
+        -webkit-border-top-right-radius: 5px 100px;    
+        border-bottom-left-radius: 20px 500px;
+        border-bottom-right-radius: 64px 10px;
+        border-top-right-radius: 5px 100px;           
+        -webkit-background-size: 100% 30px;
+        -moz-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 0 #F6EF97;
+        position: relative;
     }
-    .biye iframe {
-        border-radius: 8px;
+.izhengwen {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: auto;
+    background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 31px, #6BA2D8 1px, #f9f9f9);
+    background-size: 100% 32px;
+}
+.izhengwen p {
+    letter-spacing: .1rem;
+}
+#articleContent p {
+    margin: 0
+}
+.ititle {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.45rem!important;
+    padding: 10px auto;
+}
+.izhengwen p {
+    position: relative;
+    line-height: 2.2rem!important;
+    text-indent: 2em;
+    font-family: 'Architects Daughter', cursive!important;
+    font-size: 1.45rem!important;
+}
+.ipage::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 52px;
+    z-index: 4;
+    width: 4px;
+    height: 100%;
+    border-left: 1px solid #fca1a1;
+}
+.izhengwen p:nth-child(odd):before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+.ipage:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 52px;
+    z-index: 3;
+    width: 4px;
+    height: 100%;
+    border-left: 4px double #fca1a1;
+}
+.ipage p {
+    padding: 0 2em;
+    color: #333!important;
+}
+body.dark .ipage {
+    opacity: 0.85;
+}
+/*小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 600px) {
+    .ipage {
+        padding: 15px 23px 29px;
     }
+    .ipage:after {
+        left: 36px;
+    }
+    .ipage::before {
+        right: 36px;    
+    }
+    .ipage p, .ititle {
+        padding: 0 0.9em;
+    }
+
+}
+h3 {
+    font-size: 1.32rem;
+    font-weight: 400;
+    color: #101012;
+    transition: 0.8s;
+    cursor: pointer;
+}
+h3:hover {
+    transform: translateX(15px);
+}
 </style>
 
-<style>
-    @media only screen and (max-width: 800px) {
-      .swbk {
-          padding: 26px 2px!important;
-          margin: 14px 0px!important;
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">技术</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-17
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    14 分
+                </div>
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <div class="note info">【React+TS】从零开始搭建react+typescript+router+redux+less+px2rem自适应+sass+axios反向代理+别名@+Antd-mobile</div>
+
+<p>前提：你需要准备好node.js版本不低于6.14.8</p>
+<h3 id="通过create-react-app脚手架搭建项目"><a href="#通过create-react-app脚手架搭建项目" class="headerlink" title="通过create-react-app脚手架搭建项目"></a>通过create-react-app脚手架搭建项目</h3><ol>
+<li>打开文件夹，呼出cmd，输入搭建命令：<code>npx create-react-app 项目名称 —template typescript</code></li>
+</ol>
+<font color="red">注: 项目名称不可以出现大写字母</font>
+
+<pre><code>npx create-react-app test --template typescript
+</code></pre><p><img src="https://img.tvv.tw/2022/03/17/8327e52a8b540.png" alt="指令"></p>
+<p><img src="https://img.tvv.tw/2022/03/17/eef7adb646d67.png" alt="成功"></p>
+<ul>
+<li>当你出现Happy hacking说明你下载成功了，vscode打开项目，可以看到顺利生成了react项目组件，后缀为tsx此时说明成功创建了react+typescript项目的雏形</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/9e549a4c54a84.png" alt="成功"></p>
+<ol>
+<li>进入项目更目录下，运行命令：<code>npm start</code>启动项目</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/f19fd1c725a60.png" alt="运行"></p>
+<pre><code>npm start
+</code></pre><h3 id="配置路由"><a href="#配置路由" class="headerlink" title="配置路由"></a>配置路由</h3><ol>
+<li>npm下载路由命令：<code>npm i react-router-dom@5.2.0 react-router-config @types/react-router-config @types/react-router-dom -S</code><pre><code>npm i react-router-dom@5.2.0 react-router-config @types/react-router-config @types/react-router-dom -S
+</code></pre></li>
+<li>src目录下创建views文件夹，views内创建Home，Contact，About，Navbar四个tsx文件，其中Navbar用来控制路由，其他三个页面用来展示</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/9323f0738f88f.png" alt="创建tsx文件"></p>
+<ul>
+<li>Home:<br>```<br>import React, &#123; Component &#125; from “react”;</li>
+</ul>
+<p>export default class Home extends Component &#123;<br>  render() &#123;<br>    return (<br>      <div classname="home">
+        <div classname="container">
+          <h3 classname="center"> Home页面</h3>
+          <p>欢迎来到首页</p>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;</div></p>
+<pre><code>- Contact:
+</code></pre><p>import React, &#123; Component &#125; from “react”;</p>
+<p>export default class Contact extends Component &#123;<br>  render() &#123;<br>    return (<br>      <div classname="contact">
+        <div classname="container">
+          <h3 classname="center"> Contact页面</h3>
+          <p>欢迎来到联系我们页面！</p>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;</div></p>
+<pre><code>- About:
+</code></pre><p>import React, &#123; Component &#125; from “react”;</p>
+<p>export default class About extends Component &#123;<br>  render() &#123;<br>    return (<br>      <div classname="about">
+        <div classname="container">
+          <h3 classname="center"> About页面</h3>
+          <p>欢迎来到关于我们页面！</p>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;</div></p>
+<pre><code>- Navbar:
+</code></pre><p>import React, &#123; Component &#125; from “react”;</p>
+<p>export default class Navbar extends Component &#123;<br>    render() &#123;<br>        return (<br>            <nav classname="nav-wrapper">
+                <div classname="list">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav><br>        )<br>    &#125;<br>&#125;</p>
+<pre><code>
+3. src目录下创建routes文件夹，同时创建index.ts，使用RouteConfig对路由进行统一管理
+
+![routes文件夹](https://img.tvv.tw/2022/03/17/de44ce6f8e9c3.png)
+
+- index.ts:
+</code></pre><p>// 导入路由组件<br>import Home from ‘../views/Home’<br>import About from ‘../views/About’<br>import Contact from ‘../views/Contact’<br>// 导入路由管理工具<br>import &#123;RouteConfig&#125; from ‘react-router-config’</p>
+<p>const routes:RouteConfig = [<br>  &#123;<br>    path:’/‘,<br>    exact:true,<br>    component:Home<br>  &#125;,<br>  &#123;<br>    path:’/about’,<br>    exact:true,<br>    component:About<br>  &#125;,<br>  &#123;<br>    path:’/contact’,<br>    exact:true,<br>    component:Contact<br>  &#125;<br>]</p>
+<p>export default routes;</p>
+<pre><code>
+4. App.tsx中引入Route，Navbar和路由管理工具
+</code></pre><p>import React from “react”;<br>// 引入路由导航栏<br>import Navbar from “./views/Navbar”;<br>// 引入routes组件<br>import routes from “./routes”;<br>// 引入包管理工具<br>import &#123; renderRoutes, RouteConfig &#125; from “react-router-config”;<br>import “./App.css”;</p>
+<p>function App() &#123;<br>  return (<br>    <div classname="App"><br>      <Navbar></Navbar></div></p>
+<pre><code>  &amp;#123;/* 设置routes的类型为RouteConfig[]，否则报错 */&amp;#125;
+  &amp;#123;renderRoutes(routes as RouteConfig[])&amp;#125;
+&lt;/div&gt;
+</code></pre><p>  );<br>&#125;</p>
+<p>export default App;</p>
+<pre><code>
+![App.tsx配置](https://img.tvv.tw/2022/03/17/41bba88e8f1e5.png)
+
+5. src根目录下index.tsx中这样定义
+
+![index.tsx](https://img.tvv.tw/2022/03/17/b148bab3bc4d3.png)
+</code></pre><p>import React from “react”;<br>import ReactDOM from “react-dom”;<br>import “./index.css”;<br>import App from “./App”;<br>import reportWebVitals from “./reportWebVitals”;<br>import &#123; BrowserRouter as Router &#125; from “react-router-dom”;</p>
+<p>ReactDOM.render(<br>  <React.StrictMode><br>    <Router><br>      <App>
+    </App></Router><br>  &lt;/React.StrictMode&gt;,<br>  document.getElementById(“root”)<br>);</React.StrictMode></p>
+<p>reportWebVitals();</p>
+<pre><code>
+6. 路由就配置好了，&lt;code&gt;npm start&lt;/code&gt;启动项目
+- 启动项目若以下报错：
+
+![报错](https://img.tvv.tw/2022/03/17/0943c97260023.png)
+
+- 运行命令：&lt;code&gt;npm i react-router@5.2.0 -S&lt;/code&gt;
+</code></pre><p>npm i react-router@5.2.0 -S</p>
+<pre><code>- 输入&lt;code&gt;npm start&lt;/code&gt;再次打开页面应该是这样：
+
+![页面](https://img.tvv.tw/2022/03/17/8f7c8c4900cfe.png)
+
+- 在App.css中加点样式
+
+![App.css](https://img.tvv.tw/2022/03/17/358cb93ad3db0.png)
+</code></pre><ul>
+<li>&#123;<br>padding: 0;<br>margin: 0;<br>&#125;</li>
+</ul>
+<p>.container&#123;<br>  text-align: center;<br>&#125;</p>
+<p>h1 &#123;<br>  text-align: center;<br>  font-size: 45px;<br>  font-family: Arial, Helvetica, sans-serif;<br>  color: rgb(6, 0, 32);<br>  padding: 40px;<br>&#125;</p>
+<p>.list &#123;<br>  display: flex;<br>  justify-content: center;<br>  width: 100%;<br>&#125;</p>
+<p>.list ul li &#123;<br>  float: left;<br>  list-style: none;<br>  margin: 42px;<br>  text-align: center;<br>&#125;</p>
+<p>a &#123;<br>  text-decoration: none;<br>  color: rgb(0, 0, 0);<br>  font-size: 18px;<br>  font-family: Arial, Helvetica, sans-serif;<br>  padding: 14px 25px;<br>  background-color: transparent;<br>  border: 2px solid rgb(12, 0, 66);<br>&#125;</p>
+<p>a:hover &#123;<br>  background-color: rgb(12, 0, 66);<br>  color: rgb(255, 255, 255);<br>&#125;</p>
+<pre><code>
+![新页面](https://img.tvv.tw/2022/03/17/5e667906f887d.png)
+
+### 配置less
+1. 暴露配置方式：运行命令：&lt;code&gt;npm run eject&lt;/code&gt;
+</code></pre><p>npm run eject</p>
+<pre><code>- 这里可能会遇到以下报错
+
+![报错](https://img.tvv.tw/2022/03/17/fce5b9887addc.png)
+
+- 依次输入以下三条命令：
+</code></pre><p>git add .</p>
+<pre><code>```
+git commit -m &#39;暴露&#39;
+</code></pre><pre><code>npm run eject
+</code></pre><ul>
+<li>此时项目多出了config文件夹</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/7218188254430.png" alt="config"></p>
+<ol>
+<li>安装less和less-loader命令：<code>npm i less less-loader -S</code><pre><code>npm i less less-loader -S
+</code></pre></li>
+<li>找到config目录下的webpack.config.js文件，在50-76行之间有个cssRegex，在此处添加</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/a9a73d98d521f.png" alt="添加"></p>
+<pre><code>// less
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
+</code></pre><ol>
+<li>在webpack.config.js文件500多行有个sassRegex，模仿添加对应的lessRegex</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/7662bcfb264a2.png" alt="less"></p>
+<pre><code>// less
+            &amp;#123;
+              test: lessRegex,
+              exclude: lessModuleRegex,
+              use: getStyleLoaders(
+                &amp;#123;
+                  importLoaders: 2,
+                  sourceMap: isEnvProduction &amp;&amp; shouldUseSourceMap,
+                &amp;#125;,
+                &#39;less-loader&#39;
+              ),
+              sideEffects: true,
+            &amp;#125;,
+            // less
+            &amp;#123;
+              test: lessModuleRegex,
+              use: getStyleLoaders(
+                &amp;#123;
+                  importLoaders: 2,
+                  sourceMap: isEnvProduction &amp;&amp; shouldUseSourceMap,
+                  modules: true,
+                  getLocalIdent: getCSSModuleLocalIdent,
+                &amp;#125;,
+                &#39;less-loader&#39;
+              ),
+            &amp;#125;,
+</code></pre><ol>
+<li><strong>重新</strong>启动项目<code>npm start</code>，创建less文件并引入</li>
+</ol>
+<ul>
+<li>创建：</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/17bb88cdd00e2.png" alt="less"></p>
+<pre><code>.about&amp;#123;
+    .container&amp;#123;
+        font-size: 30px;
+        p&amp;#123;
+            color: red;
+        &amp;#125;
+    &amp;#125;
+    .box&amp;#123;
+        text-align: center;
+    &amp;#125;
+&amp;#125;
+</code></pre><ul>
+<li>引入：</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/a3f82090fdec2.png" alt="引入"></p>
+<pre><code>import &#39;about.less&#39;
+</code></pre><ul>
+<li>打开应该是这样的</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/80f85160dd215.png" alt="about页面"></p>
+<p>说明less配置成功了</p>
+<h3 id="配置sass（可选配）"><a href="#配置sass（可选配）" class="headerlink" title="配置sass（可选配）"></a>配置sass（可选配）</h3><ul>
+<li>通过create-react-app创建的react项目，其实是默认已经配置好sass的 可以直接使用</li>
+<li>可能会报以下错：</li>
+</ul>
+<p><img src="https://img.tvv.tw/2022/03/17/8893ab84f16c7.png" alt="报错"></p>
+<ul>
+<li>运行以下命令：<pre><code>npm i sass -s
+</code></pre></li>
+</ul>
+<p>重新启动项目<code>npm start</code>，样式即可生效</p>
+<h3 id="配置px转rem自适应"><a href="#配置px转rem自适应" class="headerlink" title="配置px转rem自适应"></a>配置px转rem自适应</h3><ol>
+<li><p>安装lib-flexible、pxtorem，postcss命令：</p>
+<pre><code>npm i lib-flexible postcss-pxtorem postcss postcss-loader postcss-preset-env postcss-flexbugs-fixes -s
+</code></pre></li>
+<li><p>配置config/webpack.config.js，在config目录下找到webpack.config.js文件，添加</p>
+</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/8b4e4cfdf4b8d.png" alt="rem"></p>
+<pre><code>const px2rem = require(&#39;postcss-pxtorem&#39;);
+</code></pre><ol>
+<li>然后再加入下面这行loader直接覆盖：</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/0ab02dc71e584.png" alt="loader"></p>
+<pre><code>      &amp;#123;
+        // Options for PostCSS as we reference these options twice
+        // Adds vendor prefixing based on your specified browser support in
+        // package.json
+        loader: require.resolve(&#39;postcss-loader&#39;),
+        options: &amp;#123;
+          postcssOptions: &amp;#123;
+            // Necessary for external CSS imports to work
+            // https://github.com/facebook/create-react-app/issues/2677
+            ident: &#39;postcss&#39;,
+            config: false,
+            plugins: !useTailwind
+              ? [
+                  &#39;postcss-nested&#39;,
+                  &#39;postcss-flexbugs-fixes&#39;,
+                  [
+                    &#39;postcss-preset-env&#39;,
+                    &amp;#123;
+                      autoprefixer: &amp;#123;
+                        flexbox: &#39;no-2009&#39;,
+                      &amp;#125;,
+                      stage: 3
+                    &amp;#125;,
+                  ],
+                  // Adds PostCSS Normalize as the reset css with default options,
+                  // so that it honors browserslist config in package.json
+                  // which in turn let&#39;s users customize the target behavior as per their needs.
+                  px2rem(&amp;#123;
+                    rootValue: 37.5,
+                    selectorBlackList  : [], //过滤
+                    propList   : [&#39;*&#39;],
+                    minPixelValue: 2,
+                    exclude: /node_modules/i
+                  &amp;#125;), //设计稿根据750px(iphone6)
+                &#39;postcss-normalize&#39;,
+                ]
+              : [
+                  &#39;tailwindcss&#39;,
+                  &#39;postcss-flexbugs-fixes&#39;,
+                  [
+                    &#39;postcss-preset-env&#39;,
+                    &amp;#123;
+                      autoprefixer: &amp;#123;
+                        flexbox: &#39;no-2009&#39;,
+                      &amp;#125;,
+                      stage: 3,
+                    &amp;#125;,
+                  ],
+                  px2rem(&amp;#123;
+                    rootValue: 37.5,
+                    selectorBlackList  : [], //过滤
+                    propList   : [&#39;*&#39;],
+                    minPixelValue: 2,
+                    exclude: /node_modules/i
+                    &amp;#125;), //设计稿根据750px(iphone6)
+                ],
+          &amp;#125;,
+          sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
+        &amp;#125;,
+      &amp;#125;,
+</code></pre><ol>
+<li>src目录下找到index.tsx入口文件，在文件中加入</li>
+</ol>
+<pre><code>import &#39;lib-flexible&#39;;
+</code></pre><ol>
+<li>找到public/index.html文件，替换如下代码：</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/d48f2d4e7b77d.png" alt="替换"></p>
+<pre><code>&lt;meta content=&quot;width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; name=&quot;viewport&quot;/&gt;
+</code></pre><ol>
+<li>重新运行项目<code>npm start</code></li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/051050ea5745e.png" alt="成功"></p>
+<ul>
+<li>看到这个说明运行配置了</li>
+</ul>
+<h3 id="配置axios和反向代理"><a href="#配置axios和反向代理" class="headerlink" title="配置axios和反向代理"></a>配置axios和反向代理</h3><ol>
+<li>安装axios 和 http-proxy-middleware（后面反向代理会用到）：</li>
+</ol>
+<pre><code>npm i axios http-proxy-middleware -S
+</code></pre><ol>
+<li>在src目录下创建api文件夹，然后创建 index.ts 和 request.ts 文件</li>
+</ol>
+<p><img src="https://img.tvv.tw/2022/03/17/7f7c9a1318c3d.png" alt="api"></p>
+<ul>
+<li>index:<br>```<br>//index.ts</li>
+</ul>
+<p>import &#123;Service&#125; from ‘./request’;<br>//获取汽车列表<br>export function getCarList(config: &#123; page: string; &#125;)&#123;<br>    const params = new URLSearchParams()<br>    params.append(‘page’,config.page);</p>
+<pre><code>return Service(&amp;#123;
+    url:&#39;./api/getCarList&#39;,
+    data:params
+&amp;#125;)
+</code></pre><p>&#125;</p>
+<pre><code>- request:
+</code></pre><p>//request.ts</p>
+<p>import axios from “axios”;</p>
+<p>declare module ‘axios’ &#123;<br>     export interface AxiosResponse<T = any> extends Promise<T> &#123;&#125;<br> &#125;</T></T></p>
+<p>export const Service = axios.create(&#123;<br>  timeout: 3000, //延迟时间<br>  method: “POST”,<br>  headers: &#123;<br>    “pc-token”: “4a82b23dbbf3b23fd8aa291076e660ec”,<br>    “content-Type”: “application/x-www-form-urlencoded”,<br>  &#125;,<br>&#125;);</p>
+<p>//请求拦截<br>Service.interceptors.request.use((config) =&gt; config);</p>
+<p>//响应拦截<br>Service.interceptors.response.use(<br>  (response) =&gt; response.data,<br>  (err) =&gt; console.log(err)<br>);</p>
+<pre><code>
+3. 配置代理，可以访问到后台的服务器地址
+4. 在src文件夹中创建setupProxy.js,内容配置如下
+
+![setuoProxy.js](https://static01.imgkr.com/temp/50d024c501b74b2bb7ccd93a0d0f6900.png)
+
+5. 到这里所有配置就基本完成，在组件中调用即可
+- Contact.tsx:
+</code></pre><p>import React, &#123; Component &#125; from “react”;<br>import “./contact.scss”;<br>//导入要使用的接口<br>import &#123; getCarList &#125; from “../api/index”;</p>
+<p>export default class Contact extends Component &#123;<br>  // 定义方法<br>  getList() &#123;<br>    getCarList(&#123; page: “1” &#125;).then((res) =&gt; console.log(res));<br>  &#125;<br>  render() &#123;<br>    return (<br>      <div classname="contact">
+        <div classname="container">
+          <h3 classname="center"> Contact页面</h3>
+          <p>欢迎来到联系我们页面！</p>
+          &#123;/* 点击事件调用 */&#125;
+          <button onclick="&#123;this.getList&#125;">获取数据</button>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;</div></p>
+<pre><code>
+### 配置redux
+1. 安装redux
+</code></pre><p>npm i redux react-redux -S</p>
+<pre><code>
+2. 在src路径下创建store文件夹，文件夹中创建两个文件action.ts和index.ts两个文件
+3. action中定义type，然后返回设置状态的type和函数
+
+![action](https://img.tvv.tw/2022/03/17/a0918c8902d0c.png)
+
+- action.ts:
+</code></pre><p>export const SET_AGE = “set_age”;<br>export const SET_NAME = “set_name”;</p>
+<p>export const setAge = function (n: number) &#123;<br>  return &#123;<br>    type: SET_AGE,<br>    n: n,<br>  &#125;;<br>&#125;;<br>export const setName = function (name: string) &#123;<br>  return &#123;<br>    type: SET_NAME,<br>    name: name,<br>  &#125;;<br>&#125;;</p>
+<pre><code>4. index文件中取出redux中的createStore，以及action中的type，最后需要将createStore返回出去，并且需要传递一个函数，定义这个函数时有两个参数，一个是状态，一个是action，使用switch判断action中的type，当所有条件都不成立时，将所有的状态返回，有条件成立时，就通过扩展运算符将state展开，并且对age进行操作（...state）；
+
+- index.ts:
+</code></pre><p>import &#123; createStore &#125; from “redux”;<br>import &#123; SET_AGE, SET_NAME &#125; from “./action”;</p>
+<p>interface User &#123;<br>  name: string;<br>  age: number;<br>&#125;</p>
+<p>const common: User = &#123;<br>  name: “张三123”,<br>  age: 18,<br>&#125;;</p>
+<p>function user(state = common, action: any) &#123;<br>  switch (action.type) &#123;<br>    case SET_AGE:<br>      return &#123;<br>        …state,<br>        age: state.age + action.n,<br>      &#125;;<br>    case SET_NAME:<br>      return &#123;<br>        …state,<br>        name: action.name,<br>      &#125;;<br>    default:<br>      return state;<br>  &#125;<br>&#125;</p>
+<p>export default createStore(user);</p>
+<pre><code>
+5. 在主入口文件index.tsx中进行redux的连接和store的引用
+</code></pre><p>import React from “react”;<br>import ReactDOM from “react-dom”;<br>import “./index.css”;<br>import App from “./App”;<br>import reportWebVitals from “./reportWebVitals”;<br>// 引入路由组件<br>import &#123; BrowserRouter as Router &#125; from “react-router-dom”;<br>// 引入移动端自适应<br>import “lib-flexible”;<br>//引入rootReducer组件<br>import &#123; Provider &#125; from “react-redux”;<br>import store from “./store”;</p>
+<p>ReactDOM.render(<br>  <React.StrictMode><br>    &#123;/<em> provider组件将所有的组件包裹起来，用绑定属性的形式绑定store到组件中 </em>/&#125;<br>    <Provider store="&#123;store&#125;"><br>      <Router><br>        <App>
+      </App></Router>
+    </Provider><br>  &lt;/React.StrictMode&gt;,<br>  document.getElementById(“root”)<br>);</React.StrictMode></p>
+<p>reportWebVitals();</p>
+<pre><code>
+6. 在App.tsx中进行配置
+</code></pre><p>import React from “react”;<br>// 引入路由导航栏<br>import Navbar from “./views/Navbar”;<br>// 引入routes组件<br>import routes from “./routes”;<br>// 引入包管理工具<br>import &#123; renderRoutes, RouteConfig &#125; from “react-router-config”;<br>import “./App.css”;<br>// 引入connect连接组件<br>import &#123;connect&#125; from “react-redux”</p>
+<p>function App() &#123;<br>  return (<br>    <div classname="App">
+      <Navbar>
+      &#123;/* 设置routes的类型为RouteConfig[]，否则报错 */&#125;
+      &#123;renderRoutes(routes as RouteConfig[])&#125;
+    </Navbar></div><br>  );<br>&#125;</p>
+<p>//进行连接<br>export default connect((props,state)=&gt;Object.assign(&#123;&#125;,props,state),&#123;&#125;)(App);</p>
+<pre><code>
+7. 组件中使用redux
+- 引入connect和action中的方法
+
+- 定义props和state类型
+
+- 修改render中的html结构，定义属性和方法调用
+
+- connect连接属性并导出
+
+- About.tsx:
+</code></pre><p>import React, &#123; Component &#125; from “react”;<br>import “./about.less”;<br>// redux<br>import &#123; connect &#125; from “react-redux”;<br>import &#123; setName, setAge &#125; from “../store/action”;</p>
+<p>interface Props &#123;<br>  setAge: Function;<br>  setName: Function;<br>  age: number;<br>  name: string;<br>&#125;</p>
+<p>interface State &#123;&#125;</p>
+<p>class About extends Component<Props,State> &#123;<br>  refs:any = React.createRef()<br>  // eslint-disable-next-line @typescript-eslint/no-useless-constructor<br>  constructor(props:Props)&#123;<br>    super(props)<br>  &#125;<br>  changeAge()&#123;<br>    this.props.setAge(1);<br>    console.log(this.props);<br>  &#125;<br>  changeName()&#123;<br>    let name:number = this.refs.value<br>    this.props.setName(name)<br>    console.log(this.refs);<br>    this.refs.value = ‘’<br>  &#125;<br>  render() &#123;<br>    return (<br>      <div classname="about">
+        <div classname="container">
+          <h3 classname="center"> About页面</h3>
+          <p>欢迎来到关于我们页面！</p>
+        </div><br>        <div classname="box">
+          <p>名字是：&#123;this.props.name&#125;</p>
+          <input ref="&#123;(input:" htmlinputelement)> this.refs = input&#125;  type="text" /> 
+          <button onclick="&#123;this.changeName.bind(this)&#125;">修改姓名</button>
+          <p>年龄是：&#123;this.props.age&#125;</p> 
+          <button onclick="&#123;this.changeAge.bind(this)&#125;">修改年龄</button>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;</div></Props,State></p>
+<p>export default connect((props,state)=&gt;Object.assign(&#123;&#125;,props,state),&#123;<br>  setAge,setName<br>&#125;)(About);</p>
+<pre><code>
+实现这样的效果就成功了
+
+![效果](https://img.tvv.tw/2022/03/17/653ea5422d238.png)
+
+### 配置别名@
+
+1. 打开 config 文件夹下的 webpack.config.js 文件
+
+2. ctrl + f 搜索alias，替换这个alias，代码如下：
+</code></pre><p>alias: &#123;<br>        // Support React Native Web<br>        // <a target="_blank" rel="noopener" href="https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/">https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/</a><br>        ‘react-native’: ‘react-native-web’,<br>        // Allows for better profiling with ReactDevTools<br>        …(isEnvProductionProfile &amp;&amp; &#123;<br>          ‘react-dom$’: ‘react-dom/profiling’,<br>          ‘scheduler/tracing’: ‘scheduler/tracing-profiling’,<br>        &#125;),<br>        …(modules.webpackAliases || &#123;&#125;),<br>        // 文件路径别名<br>        ‘@’: path.resolve(<strong>dirname, ‘../src’),<br>        ‘@view’: path.resolve(</strong>dirname, ‘../src/view’),<br>      &#125;,</p>
+<pre><code>
+需要特别注意的是： webpack配置进行改动后，都需要**重新**启动项目，不然不生效
+
+### 配置antd-mobile
+
+1. 安装antd-mobile
+</code></pre><p>npm install antd-mobile</p>
+<pre><code>
+2. 在项目中Home.tsx文件中导入要使用的组件
+- Home.tsx:
+</code></pre><p>import React, &#123; Component &#125; from “react”;<br>//使用组件直接在组件中进行使用即可<br>import &#123; Button &#125; from ‘antd-mobile’;</p>
+<p>export default class Home extends Component &#123;<br>  render() &#123;<br>    return (<br>      <div classname="home">
+        <div classname="container">
+          <h3 classname="center"> Home页面</h3>
+          <p>欢迎来到首页</p>
+          <Button color="primary">按钮</Button>
+        </div><br>      &lt;/div&gt;<br>    );<br>  &#125;<br>&#125;<br>```</div></p>
+<p>完成之后，你就能在react项目使用antd-mobile的样式文件进行构建自己的页面了</p>
+<h3 id="有问题下面评论区及时沟通"><a href="#有问题下面评论区及时沟通" class="headerlink" title="有问题下面评论区及时沟通"></a>有问题下面评论区及时沟通</h3>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">多喝热水</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://Moon-Amor.github.io/posts/react_cli_ts.html">https://Moon-Amor.github.io/posts/react_cli_ts.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">多喝热水</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
       }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">技术</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
     }
-    .swbk {
-        position: relative;
-        padding: 26px 20px;
-        font-style: italic;
-        margin: 10px 0px;
-        border-radius: 8px;
-        -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        -webkit-transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
     }
-    .swbk:hover {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-        -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.14), 0 3px 8px rgba(0,0,0,.12);
-        box-shadow: 0 14px 38px rgba(0,0,0,.14), 0 3px 8px rgba(0,0,0,.12);
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
     }
-    .swbk:before {
-        content: " “ ";
-        top: 56px;
-        /* left: -14px; */
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
     }
-    .swbk:after {
-        content: " ” ";
-        bottom: 8px;
-        right: 5px;
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
     }
-    .swbk:after, .swbk:before {
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
         position: absolute;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 42px;
-        text-decoration: inherit;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
     }
-    .ziwojieshao .swbk:after, .ziwojieshao .swbk:before {
-        display: none;
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
     }
-    body.dark .swbk:after, body.dark .swbk:before {
-        color: #d2c9c9;
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
     }
-    .swbk p {
-        font-size: 19px!important;
-        line-height: 1.3rem;
-        text-indent: 2rem;
-        font-style: italic;
-        font-family: 'Architects Daughter', cursive!important;
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
     }
-    .swbk .label {
-        display: inline-block;
-        position: relative;
-        margin-bottom: 10px;
-        padding: 0 14px 0 32px;
-        height: 32px;
-        line-height: 32px;
-        border-radius: 0 3px 3px 0;
-        background-color: currentColor;
+
+    .reward-content ul {
+        padding-left: 0 !important;
     }
-    .swbk .label span {
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
         color: #fff;
     }
-    .swbk .label:after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 0;
-        height: 0;
-        background-color: transparent;
-        border-style: solid;
-        border-width: 0 16px 16px 0;
-        border-color: transparent;
-        border-right-color: currentColor;
-        -webkit-filter: brightness(120%);
-        filter: brightness(120%);
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
     }
-    @media screen and (min-width: 768px) {
-        .swbk .label {
-            left: -37px;
-        }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
     }
-    @media screen and (max-width: 767px) {
-        .swbk .label {
-            left: -18px;
-        }
-        .swbk p {
-            line-height: 2.02rem;
-            padding: 2px 8px;
-        }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
     }
 </style>
 
-<main class="content">
-    <div class="container">
-        <div class="card musis">
-        
-        <div class="musictitle center-align">
-        </div>
-        <hr>
-        
-        <!-- 2019成都BW初体验模块 -->
-        <div class="biye">
-            <p>🎬 <i style="border-bottom: 1px solid #ad7a86;">2019成都BW</i> 初体验vlog</p>
-            <div class="swbk">
-                <div class="label" style="color: rgb(134, 193, 102);">
-                    <span>多喝热水博主</span></div>
-                <p><i style="border-bottom: 1px solid #ad7a86;">2019.12</i>  itsNeko开源博主的漫展之旅</p>
-                <p><i style="border-bottom: 1px solid #ad7a86;">bilibili world</i> 登船初体验，<i style="border-bottom: 1px solid #ad7a86;">扭蛋机/福袋/coser/手办/游戏</i> ...</p>
-                <p>(博主真的算不上一个二次元少年，只是因为好奇这个文化，所以就来看看了...)</p>
-            </div>
-            
-            <div style="position: relative; padding: 30% 45%;">
-                <iframe style="
-                    position: absolute; 
-                    width: 100%; 
-                    height: 100%; 
-                    left: 0; top: 0;" 
-                    src="//player.bilibili.com/player.html?aid=423737512&bvid=BV1i3411E76D&cid=498095698&page=1&high_quality=1"
-                    scrolling="no" 
-                    border="0" 
-                    frameborder="no" 
-                    framespacing="0" 
-                    allowfullscreen="true">
-                </iframe>
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">感谢赞赏哦~</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</div>
 
-            <!-- 哔哩哔哩链接 -->
-            <div class="musiclink biye">
-                <a href="https://space.bilibili.com/107492592" target="_blank">
-                    🎬 <i style="border-bottom: 1px solid #ad7a86;">博主的哔哩哔哩站点 </i> 链接
-                </a>    
-                <div class="swbk">
-                    <div class="label" style="color: rgb(245, 150, 170);">
-                        <!-- 小帽子 -->
-                        <img class="labelmz" src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/medias/spring-img/maozi.png" />
-                    <p>
-                        哔哩哔哩站点链接：<a target="_blank" rel="noopener" href="https://space.bilibili.com/107492592" style="color:#42b983;">番茄鱼啊</a>
-                        <div class="tipsbili">tips~ : 引入哔哩哔哩视频链接时，在src引入路径最后加上<code>&high_quality=1</code>可开启最高画质哦~ (1=最高画质 0=最低画质)</div>         
-                    </p>
-                </div>           
-            </div>       
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
         </div>
+    </div>
 
-        <div class="card">
-            <!-- 以下是评论模块 -->
-            
+    
 
-            
+    
 
-            
+    
 
-            
+    
 
-            
-            <style>
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -1290,14 +1994,304 @@
     });
 </script>
 
-            
-			
-			
-            <!-- <p style="text-align: center;padding: 0px 20px 10px;color: #969696;">这里的评论板块不知道怎么了，不能显示大家的评论，也许是leancloud配置问题吧，望理解，<br>所以访客朋友们请移步去我的留言板评论吧，或许你有解决办法也请告知我哦~</p> -->
-        </div>
+    
 
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/react_cli_ts.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/toc-banner/1.png" class="responsive-img" alt="这是随笔文章模板">
+                        
+                        <span class="card-title">
+                          <!-- 文章卡片hover线条效果 -->
+                          <span class="titlesline"></span>
+                          这是随笔文章模板
+                        </span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            【React+TS】从零开始搭建react+typescript+router+redux+less+px2rem自适应+sass+axios反向代理+别名@+Antd-mobile
+
+前提：你需要准备好node.js版本不低于6.14.8
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">技术</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/git_article.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/toc-banner/1.png" class="responsive-img" alt="Git使用">
+                        
+                        <span class="card-title">
+                          <!-- 文章卡片hover线条效果 -->
+                          <span class="titlesline"></span>
+                          Git使用
+                        </span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Git是目前世界上最先进的分布式版本控制系统（没有之一）。Git 是一个开源的分布式版本控制软件,用以有效、高速的处理从很小到非常大的项目版本管理。
+
+什么是Git
+Git是目前世界上最先进的分布式版本控制系统（没有之一）
+Git 是一个开
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">技术</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
+</article>
+<style>
+  .articles .row .article {
+    position: relative;
+  }
+</style>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('50')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 多喝热水`Blog<br />'
+            + '文章作者: 多喝热水<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+
+        </div>
+        
+        
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        
+        
+        <div class="toc-widget" data-spmid="技术">
+            <div class="toc-title">
+                <i class="far fa-list-alt"></i>
+                &nbsp;&nbsp;目录
+            </div>
+            <div id="toc-content"></div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+    
+<div id="floating-toc-btn" class="hide-on-med-and-down" data-spmid="技术">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/Moon-Amor/Moon-Amor.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.7 - 50);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
 </main>
+
+
 
 
     <style>

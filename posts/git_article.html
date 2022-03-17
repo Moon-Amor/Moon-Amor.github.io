@@ -970,7 +970,7 @@ h3:hover {
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.4k
                 </div>
                 
 
@@ -1104,13 +1104,16 @@ $ git branch --set-upstream-to=origin/dev dev
 </code></pre>
 <h4 id="9-查看状态"><a href="#9-查看状态" class="headerlink" title="9.查看状态"></a>9.查看状态</h4><ul>
 <li>查看当前工作状态命令：<code>git status</code> 看看那些需要更新</li>
-<li>查看commit日志命令：<code>git log</code></li>
+<li>查看commit全部日志命令：<code>git log</code></li>
+<li>查看commit日志命令一行(当提交数量很大的时候非常有用)：<code>git log —pretty=oneline </code></li>
 </ul>
-<h4 id="10-丢弃文件"><a href="#10-丢弃文件" class="headerlink" title="10.丢弃文件"></a>10.丢弃文件</h4><ul>
-<li>丢弃某个文件：<code>git checkout — 文件名称</code></li>
-<li>丢弃所有文件：<code>git checkout .</code></li>
+<h4 id="10-版本回滚"><a href="#10-版本回滚" class="headerlink" title="10.版本回滚"></a>10.版本回滚</h4><ul>
+<li>恢复暂存区和HEAD一致命令：<code>git reset HEAD</code></li>
+<li>恢复暂存区指定文件与HEAD一致命令：<code>git reset HEAD — 文件名</code></li>
+<li>恢复工作区指定文件与暂存区一致命令：<code>git checkout — 文件名称</code></li>
+<li>恢复工作区所有文件与暂存区一致命令：<code>git checkout .</code></li>
+<li>回退到指定commit：<code>git reset —hard commit哈希值</code><h3 id="更详细的可阅读廖雪峰网站"><a href="#更详细的可阅读廖雪峰网站" class="headerlink" title="更详细的可阅读廖雪峰网站"></a>更详细的可阅读廖雪峰网站</h3><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="LinkCard" target="_blank">廖雪峰网站地址</a></li>
 </ul>
-<h3 id="更详细的可阅读廖雪峰网站"><a href="#更详细的可阅读廖雪峰网站" class="headerlink" title="更详细的可阅读廖雪峰网站"></a>更详细的可阅读廖雪峰网站</h3><p><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="LinkCard" target="_blank">廖雪峰网站地址</a></p>
 
             </div>
             <hr/>
@@ -1701,35 +1704,32 @@ $ git branch --set-upstream-to=origin/dev dev
         
         <div class="article col s12 m6">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/git_article.html">
+                <a href="/posts/react_cli_ts.html">
                     <div class="card-image">
                         
-                        <img src="/medias/toc-banner/1.png" class="responsive-img" alt="Git使用">
+                        <img src="/medias/toc-banner/1.png" class="responsive-img" alt="这是随笔文章模板">
                         
                         <span class="card-title">
                           <!-- 文章卡片hover线条效果 -->
                           <span class="titlesline"></span>
-                          Git使用
+                          这是随笔文章模板
                         </span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Git是目前世界上最先进的分布式版本控制系统（没有之一）。Git 是一个开源的分布式版本控制软件,用以有效、高速的处理从很小到非常大的项目版本管理。
+                            【React+TS】从零开始搭建react+typescript+router+redux+less+px2rem自适应+sass+axios反向代理+别名@+Antd-mobile
 
-什么是Git
-Git是目前世界上最先进的分布式版本控制系统（没有之一）
-Git 是一个开
+前提：你需要准备好node.js版本不低于6.14.8
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-17
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1742,7 +1742,6 @@ Git 是一个开
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -2022,7 +2021,7 @@ itsNeko开源介绍
 
       
       &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span
-        class="white-color">4.3k</span>&nbsp;
+        class="white-color">7.3k</span>&nbsp;
       
       
       
