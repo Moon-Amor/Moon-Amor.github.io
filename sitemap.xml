@@ -100,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/musics/index.html</loc>
-    
-    <lastmod>2022-02-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://moon-amor.github.io/lab/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
@@ -114,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/project/index.html</loc>
+    <loc>https://moon-amor.github.io/musics/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -128,7 +121,7 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/essay/index.html</loc>
+    <loc>https://moon-amor.github.io/project/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -136,6 +129,13 @@
   
   <url>
     <loc>https://moon-amor.github.io/friends/index.html</loc>
+    
+    <lastmod>2022-02-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moon-amor.github.io/essay/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/categories/index.html</loc>
+    <loc>https://moon-amor.github.io/collection/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     
   </url>
   
   <url>
-    <loc>https://moon-amor.github.io/collection/index.html</loc>
+    <loc>https://moon-amor.github.io/categories/index.html</loc>
     
     <lastmod>2022-02-27</lastmod>
     

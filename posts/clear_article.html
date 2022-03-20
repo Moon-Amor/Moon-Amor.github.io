@@ -989,7 +989,8 @@ h3:hover {
             <div id="articleContent">
                 <div class="note info">清除浮动主要是为了解决，父元素因为子级元素浮动引起的内部高度为0的问题（父元素高度塌陷）</div>
 
-<h3 id="1-额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）"><a href="#1-额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）" class="headerlink" title="1.额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）"></a>1.额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）</h3><pre><code>&lt;!DOCTYPE html&gt;
+<h3 id="1-额外标签法"><a href="#1-额外标签法" class="headerlink" title="1.额外标签法"></a>1.额外标签法</h3><p>-（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）</p>
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -1024,13 +1025,6 @@ h3:hover {
         .clearfix&amp;#123;
             clear: both;
         &amp;#125;
-        /* 
-        结尾处加空div标签：
-            原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度 
-            优点：
-            缺点：
-            建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法 
-        */
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -1048,7 +1042,7 @@ h3:hover {
 <li>优点：简单、代码少、浏览器支持好、不容易出现怪问题 </li>
 <li>缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div（无意义标签），语义化差</li>
 </ul>
-<h3 id="2-父级添加overflow属性（父元素添加overflow-hidden）（不推荐）"><a href="#2-父级添加overflow属性（父元素添加overflow-hidden）（不推荐）" class="headerlink" title="2.父级添加overflow属性（父元素添加overflow:hidden）（不推荐）"></a>2.父级添加overflow属性（父元素添加overflow:hidden）（不推荐）</h3><ul>
+<h3 id="2-父级添加overflow属性（不推荐）"><a href="#2-父级添加overflow属性（不推荐）" class="headerlink" title="2.父级添加overflow属性（不推荐）"></a>2.父级添加overflow属性（不推荐）</h3><ul>
 <li>原理：通过触发BFC方式，实现清除浮动</li>
 </ul>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -1204,8 +1198,11 @@ h3:hover {
 <li>优点：没有优点 </li>
 <li>缺点：会产生新的浮动问题。 </li>
 </ul>
-<h3 id="5-结尾处加-br标签-clear-both-不推荐使用，只作了解。"><a href="#5-结尾处加-br标签-clear-both-不推荐使用，只作了解。" class="headerlink" title="5.结尾处加 br标签 clear:both 不推荐使用，只作了解。"></a>5.结尾处加 br标签 clear:both 不推荐使用，只作了解。</h3><ul>
-<li>原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both </li>
+<h3 id="5-结尾处加br标签-clear-both"><a href="#5-结尾处加br标签-clear-both" class="headerlink" title="5.结尾处加br标签 clear:both"></a>5.结尾处加br标签 clear:both</h3><ul>
+<li><p>不推荐使用，只作了解。</p>
+</li>
+<li><p>原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both </p>
+</li>
 </ul>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -1315,7 +1312,8 @@ h3:hover {
 <li>优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等） </li>
 <li>缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。 </li>
 </ul>
-<h3 id="7-给父div定义height（不推荐使用，只建议高度固定的布局时使用）"><a href="#7-给父div定义height（不推荐使用，只建议高度固定的布局时使用）" class="headerlink" title="7.给父div定义height（不推荐使用，只建议高度固定的布局时使用）"></a>7.给父div定义height（不推荐使用，只建议高度固定的布局时使用）</h3><ul>
+<h3 id="7-给父div定义height"><a href="#7-给父div定义height" class="headerlink" title="7.给父div定义height"></a>7.给父div定义height</h3><p>-（不推荐使用，只建议高度固定的布局时使用）</p>
+<ul>
 <li>原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。</li>
 </ul>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -1372,8 +1370,11 @@ h3:hover {
 <li>优点：简单、代码少、容易掌握 </li>
 <li>缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题 </li>
 </ul>
-<h3 id="8-父div定义display-table-不推荐使用，只作了解"><a href="#8-父div定义display-table-不推荐使用，只作了解" class="headerlink" title="8. 父div定义display table 不推荐使用，只作了解"></a>8. 父div定义display table 不推荐使用，只作了解</h3><ul>
-<li>原理：将div属性变成表格 </li>
+<h3 id="8-父div定义display-table"><a href="#8-父div定义display-table" class="headerlink" title="8. 父div定义display table"></a>8. 父div定义display table</h3><ul>
+<li><p>不推荐使用，只作了解</p>
+</li>
+<li><p>原理：将div属性变成表格 </p>
+</li>
 </ul>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -2036,8 +2037,9 @@ h3:hover {
                         
                             清除浮动主要是为了解决，父元素因为子级元素浮动引起的内部高度为0的问题（父元素高度塌陷）
 
-1.额外标签法（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）&lt;!DOCTYPE html&gt;
-&lt;h
+1.额外标签法-（在最后一个浮动标签后，新加一个标签，给其设置clear：both；）（不推荐）
+&lt;!DOCTYPE html&gt;
+&lt
                         
                     </div>
                     <div class="publish-info">
@@ -2090,13 +2092,14 @@ h3:hover {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            盒子居中的几种方法，定位，弹性盒子，display
+                            盒子水平垂直居中的几种方法，定位，弹性盒子，display
+
 
 1.定位方法&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
 &lt;head&gt;
-    &lt;meta chars
+    &lt;meta 
                         
                     </div>
                     <div class="publish-info">
@@ -2338,7 +2341,7 @@ h3:hover {
 
       
       &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span
-        class="white-color">11.8k</span>&nbsp;
+        class="white-color">11.7k</span>&nbsp;
       
       
       
