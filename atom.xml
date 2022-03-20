@@ -6,7 +6,7 @@
   <link href="https://moon-amor.github.io/atom.xml" rel="self"/>
   
   <link href="https://moon-amor.github.io/"/>
-  <updated>2022-03-17T07:34:58.387Z</updated>
+  <updated>2022-03-20T14:23:22.249Z</updated>
   <id>https://moon-amor.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>清除浮动</title>
+    <link href="https://moon-amor.github.io/posts/clear_article.html"/>
+    <id>https://moon-amor.github.io/posts/clear_article.html</id>
+    <published>2022-03-20T14:23:00.000Z</published>
+    <updated>2022-03-20T14:23:22.249Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://moon-amor.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://moon-amor.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>盒子居中</title>
+    <link href="https://moon-amor.github.io/posts/vertical_article.html"/>
+    <id>https://moon-amor.github.io/posts/vertical_article.html</id>
+    <published>2022-03-20T13:15:00.000Z</published>
+    <updated>2022-03-20T13:55:06.831Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://moon-amor.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://moon-amor.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>react+ts等最详细配置</title>

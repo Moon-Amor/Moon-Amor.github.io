@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://Moon-Amor.github.io/posts/clear_article.html</loc>
+    <lastmod>2022-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://Moon-Amor.github.io/posts/vertical_article.html</loc>
+    <lastmod>2022-03-20</lastmod>
+  </url>
+  <url>
     <loc>https://Moon-Amor.github.io/posts/react_cli_ts.html</loc>
     <lastmod>2022-03-17</lastmod>
   </url>
