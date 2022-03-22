@@ -765,7 +765,7 @@ export default class Home extends Component &amp;#123;
 </code></pre><p>完成之后，你就能在react项目使用antd-mobile的样式文件进行构建自己的页面了</p>
 <h3 id="有问题下面评论区及时沟通"><a href="#有问题下面评论区及时沟通" class="headerlink" title="有问题下面评论区及时沟通"></a>有问题下面评论区及时沟通</h3>]]></content>
       <categories>
-        <category>技术</category>
+        <category>react</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1025,7 +1025,7 @@ $ git branch --set-upstream-to=origin/dev dev
 </ul>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>Git</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1476,7 +1476,7 @@ $ git branch --set-upstream-to=origin/dev dev
 </ul>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>清除浮动</category>
       </categories>
       <tags>
         <tag>技术</tag>
@@ -1703,6 +1703,7 @@ $ git branch --set-upstream-to=origin/dev dev
             display: flex;
             width: 500px;
             height: 500px;
+            margin: auto;
             border: 1px solid #000;
         &amp;#125;
 
@@ -1710,6 +1711,7 @@ $ git branch --set-upstream-to=origin/dev dev
             display: flex;
             width: 200px;
             height: 200px;
+            margin: auto;
             background-color: blueviolet;
         &amp;#125;
     &lt;/style&gt;
@@ -1875,7 +1877,7 @@ $ git branch --set-upstream-to=origin/dev dev
 &lt;/html&gt;
 </code></pre>]]></content>
       <categories>
-        <category>技术</category>
+        <category>盒子居中</category>
       </categories>
       <tags>
         <tag>技术</tag>
